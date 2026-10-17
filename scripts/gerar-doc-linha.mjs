@@ -102,14 +102,14 @@ fluxo.forEach((tag, i) => {
 });
 utilidades.forEach((tag, i) => (svg += caixa(tag, colX(i), yu)));
 const legenda = Object.values(cores)
-  .map(([f, b, t], i) => `<rect x="${X0 + i * 140}" y="340" width="14" height="14" rx="3" fill="${f}" stroke="${b}" stroke-width="2"/><text x="${X0 + i * 140 + 20}" y="352" font-size="10" fill="#14202b">${t}</text>`)
+  .map(([f, b, t], i) => `<rect x="${X0 + i * 140}" y="346" width="14" height="14" rx="3" fill="${f}" stroke="${b}" stroke-width="2"/><text x="${X0 + i * 140 + 20}" y="358" font-size="10" fill="#14202b">${t}</text>`)
   .join("");
-const mapa = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${colX(6)} 368" width="100%" font-family="DejaVu Sans, Arial, sans-serif">
+const mapa = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${colX(6)} 374" width="100%" font-family="DejaVu Sans, Arial, sans-serif">
 <defs><marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b6b76"/></marker></defs>
 <text x="${X0}" y="22" font-size="12" font-weight="700" fill="#0b2a3d">Fluxo da produção (PET pré-forma até pallet)</text>
 ${svg}
 <text x="${X0}" y="244" font-size="12" font-weight="700" fill="#0b2a3d">Utilidades que alimentam a linha</text>
-<text x="${X0}" y="322" font-size="10" fill="#5b6b76">Estados de exemplo, fictícios, só para mostrar as cores.</text>
+<text x="${X0}" y="336" font-size="10" fill="#5b6b76">Estados de exemplo, fictícios, só para mostrar as cores.</text>
 ${legenda}
 </svg>`;
 
@@ -255,4 +255,53 @@ ${rotas.map(textoRota).join("\n")}
 mkdirSync(join(raiz, "docs"), { recursive: true });
 writeFileSync(join(raiz, "docs/mapa-linha.svg"), mapa);
 writeFileSync(join(raiz, "docs/gemeo-digital-e-rotas.md"), md);
+
+// ---------- resumo direto (1 a 2 páginas) ----------
+const resumoRotas = rotas.map((r) => {
+  const blocos = pontosDaRota(r);
+  const total = blocos.reduce((n, b) => n + b.pontos.length, 0);
+  const minutos = Math.ceil(total * 1.5 + blocos.length);
+  const paradas = blocos.map((b) => nomeCurto(b.ativo.nome)).join(" › ");
+  return `| **${r.id}** ${r.nome} | ${r.quando} | ${paradas} | ${total} | ~${minutos} min |`;
+});
+const resumo = `# 🏭 Holofix — Linha, Gêmeo Digital e Rotas
+### Resumo direto · ${linha.nome}
+
+**Data:** 17/10/2026 · ⚠ Linha-modelo para o piloto; ajustar à planta real.
+
+![Mapa da linha](mapa-linha.svg)
+
+## 🗺️ As 4 rotas (na ordem do fluxo)
+
+| Rota | Quando | Paradas | Pontos | Tempo ⚠ |
+|---|---|---|---|---|
+${resumoRotas.join("\n")}
+
+⚠ Tempo = 1,5 min por ponto + 1 min por parada. A medir no piloto.
+
+## 🚦 Estado de cada máquina no gêmeo digital
+
+| Cor | Quando |
+|---|---|
+| 🔵 Em manutenção | Ordem de serviço em andamento (bloqueio ativo) |
+| 🔴 Falha | Ponto marcado Falha, ou chamado urgente aberto |
+| 🟡 Atenção | Ponto marcado Atenção, ou número fora da faixa |
+| ⚪ Sem dado | Sem ronda no prazo (1,5 vez o intervalo ⚠) |
+| 🟢 Normal | Última ronda toda OK e nada aberto |
+
+## ✅ Regras de campo
+
+1. **QR em cada máquina**: o técnico confirma onde está; o reconhecimento por imagem é só apoio.
+2. **Sem internet, a ronda continua** e sobe quando a rede voltar.
+3. **LOTO manda**: os óculos não substituem bloqueio e etiquetagem.
+4. **Só olhar, ouvir e ler painel**: nunca mexer em máquina em movimento.
+5. **Fora de escopo**: sala de amônia e áreas classificadas.
+
+## ☑️ Validar com o cliente
+- [ ] Máquinas reais da linha e a ordem
+- [ ] Layout físico (ajusta a ordem das rotas)
+- [ ] Faixas aceitáveis de pressão, temperatura e Brix (manual do fabricante)
+- [ ] Onde óculos e câmera são permitidos
+`;
+writeFileSync(join(raiz, "docs/gemeo-digital-resumo.md"), resumo);
 console.log(`OK: ${ativos.length} ativos, ${pontos.length} pontos, ${rotas.length} rotas`);
