@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 368" width="100%" font-family="DejaVu Sans, Arial, sans-serif">
+<defs><marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b6b76"/></marker></defs>
+<text x="10" y="22" font-size="12" font-weight="700" fill="#0b2a3d">Fluxo da produção (PET pré-forma até pallet)</text>
+<g><rect x="10" y="38" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="66" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-XAR-01</text>
+<text x="66" y="69" text-anchor="middle" font-size="10" fill="#14202b">Proporcionador de</text>
+<text x="66" y="81" text-anchor="middle" font-size="10" fill="#14202b">xarope</text></g><g><rect x="140" y="38" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="196" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-SOP-01</text>
+<text x="196" y="69" text-anchor="middle" font-size="10" fill="#14202b">Sopradora de PET</text></g><line x1="122" y1="68" x2="138" y2="68" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="270" y="38" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="326" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-TRA-01</text>
+<text x="326" y="69" text-anchor="middle" font-size="10" fill="#14202b">Transportadores de</text>
+<text x="326" y="81" text-anchor="middle" font-size="10" fill="#14202b">garrafas</text></g><line x1="252" y1="68" x2="268" y2="68" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="400" y="38" width="112" height="60" rx="9" fill="#fdf3d0" stroke="#e0a800" stroke-width="2"/>
+<text x="456" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-ENC-01</text>
+<text x="456" y="69" text-anchor="middle" font-size="10" fill="#14202b">Enchedora</text>
+<text x="456" y="81" text-anchor="middle" font-size="10" fill="#14202b">isobárica</text></g><line x1="382" y1="68" x2="398" y2="68" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="530" y="38" width="112" height="60" rx="9" fill="#fde4de" stroke="#e76f51" stroke-width="2"/>
+<text x="586" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-CAP-01</text>
+<text x="586" y="69" text-anchor="middle" font-size="10" fill="#14202b">Capsulador</text></g><line x1="512" y1="68" x2="528" y2="68" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="660" y="38" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="716" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-INS-01</text>
+<text x="716" y="69" text-anchor="middle" font-size="10" fill="#14202b">Inspetor de nível</text>
+<text x="716" y="81" text-anchor="middle" font-size="10" fill="#14202b">e tampa</text></g><line x1="642" y1="68" x2="658" y2="68" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="660" y="138" width="112" height="60" rx="9" fill="#eceff1" stroke="#90a4ae" stroke-width="2"/>
+<text x="716" y="153" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-ROT-01</text>
+<text x="716" y="169" text-anchor="middle" font-size="10" fill="#14202b">Rotuladora</text></g><line x1="716" y1="98" x2="716" y2="136" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="530" y="138" width="112" height="60" rx="9" fill="#e3e8ff" stroke="#3d5afe" stroke-width="2"/>
+<text x="586" y="153" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-COD-01</text>
+<text x="586" y="169" text-anchor="middle" font-size="10" fill="#14202b">Codificador a jato</text>
+<text x="586" y="181" text-anchor="middle" font-size="10" fill="#14202b">de tinta</text></g><line x1="660" y1="168" x2="644" y2="168" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="400" y="138" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="456" y="153" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-EMB-01</text>
+<text x="456" y="169" text-anchor="middle" font-size="10" fill="#14202b">Embaladora com</text>
+<text x="456" y="181" text-anchor="middle" font-size="10" fill="#14202b">filme</text></g><line x1="530" y1="168" x2="514" y2="168" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="270" y="138" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="326" y="153" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-PAL-01</text>
+<text x="326" y="169" text-anchor="middle" font-size="10" fill="#14202b">Paletizadora</text></g><line x1="400" y1="168" x2="384" y2="168" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="140" y="138" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="196" y="153" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">LP01-ENV-01</text>
+<text x="196" y="169" text-anchor="middle" font-size="10" fill="#14202b">Envolvedora de</text>
+<text x="196" y="181" text-anchor="middle" font-size="10" fill="#14202b">pallet</text></g><line x1="270" y1="168" x2="254" y2="168" stroke="#5b6b76" stroke-width="2" marker-end="url(#p)"/><g><rect x="10" y="258" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="66" y="273" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">UT-CAR-01</text>
+<text x="66" y="289" text-anchor="middle" font-size="10" fill="#14202b">Compressor de ar</text></g><g><rect x="140" y="258" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="196" y="273" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">UT-CO2-01</text>
+<text x="196" y="289" text-anchor="middle" font-size="10" fill="#14202b">Estação de CO2</text></g><g><rect x="270" y="258" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="326" y="273" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">UT-CHL-01</text>
+<text x="326" y="289" text-anchor="middle" font-size="10" fill="#14202b">Chiller de água</text>
+<text x="326" y="301" text-anchor="middle" font-size="10" fill="#14202b">gelada</text></g><g><rect x="400" y="258" width="112" height="60" rx="9" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/>
+<text x="456" y="273" text-anchor="middle" font-size="9" font-weight="700" fill="#0b2a3d">UT-CIP-01</text>
+<text x="456" y="289" text-anchor="middle" font-size="10" fill="#14202b">Estação CIP</text></g>
+<text x="10" y="244" font-size="12" font-weight="700" fill="#0b2a3d">Utilidades que alimentam a linha</text>
+<text x="10" y="322" font-size="10" fill="#5b6b76">Estados de exemplo, fictícios, só para mostrar as cores.</text>
+<rect x="10" y="340" width="14" height="14" rx="3" fill="#e3f4f1" stroke="#2a9d8f" stroke-width="2"/><text x="30" y="352" font-size="10" fill="#14202b">Normal</text><rect x="150" y="340" width="14" height="14" rx="3" fill="#fdf3d0" stroke="#e0a800" stroke-width="2"/><text x="170" y="352" font-size="10" fill="#14202b">Atenção</text><rect x="290" y="340" width="14" height="14" rx="3" fill="#fde4de" stroke="#e76f51" stroke-width="2"/><text x="310" y="352" font-size="10" fill="#14202b">Falha</text><rect x="430" y="340" width="14" height="14" rx="3" fill="#e3e8ff" stroke="#3d5afe" stroke-width="2"/><text x="450" y="352" font-size="10" fill="#14202b">Em manutenção</text><rect x="570" y="340" width="14" height="14" rx="3" fill="#eceff1" stroke="#90a4ae" stroke-width="2"/><text x="590" y="352" font-size="10" fill="#14202b">Sem dado</text>
+</svg>
